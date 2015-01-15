@@ -8,17 +8,16 @@ wordlist = open('hangmanwords.txt').read().splitlines()
 #Need a random number generator to choose a random word from the list each time the program is run
 indexforword = rand.randrange(0,len(wordlist))
 word = wordlist[indexforword].lower()
-#Hangman images imported from hangmangallowsimages script
+#    Hangman images imported from hangmangallowsimages script
 
-##########################The code works up to here#########################################
 #Print out user interface with the _ _ _ _ and the hangman gallows drawing
 print "Hello and welcome to the Hangman game. Below I'll quickly explain the rules of this particular version."
-print "\n\t1. You have to guess the letters of the word you see in '_ _ _ _' characters. A correct guess will display",
-print "all\n\t instances of that letter in the word. \n\t2. A wrong guess adds to the Hangman's demise! You can guess",
+print "\n1. You have to guess the letters of the word you see in '_ _ _ _' characters. A correct guess will display",
+print "all\n   instances of that letter in the word.\n2. A wrong guess adds to the Hangman's demise! You can guess",
 print "wrong 9 times before the Hangman is complete hung!"
-print "\t3. You win if you guess the word fully, lose if the hangman is completely hung"
+print "3. You win if you guess the word fully, lose if the hangman is completely hung"
 
-print "Okay, let's get started!"
+print "\nOkay, let's get started!"
 
 userguess = []
 for letter in word:
